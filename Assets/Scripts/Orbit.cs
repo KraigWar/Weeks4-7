@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Orbit : MonoBehaviour
 {
-    public float speed = 5;
+    //set speed to an amount I want to rotate it by
+    public float speed = 50;
     void Start()
     {
         
@@ -13,6 +14,7 @@ public class Orbit : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //haev the object rotate arounf the object based on the speed set witht eh time that has passed
         transform.Rotate(0, 0, speed * Time.deltaTime);
 
     }
